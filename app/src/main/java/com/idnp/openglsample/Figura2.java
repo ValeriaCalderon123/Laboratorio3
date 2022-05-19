@@ -13,11 +13,10 @@ class Figure2 {
     private ByteBuffer mIndexBuffer;
 
     private float vertices[] = {
+            0.0f,  1.0f,  0.0f,
             -1.0f, -1.0f, -1.0f,
             1.0f, -1.0f, -1.0f,
-            1.0f, -1.0f, 1.0f,
-            -1.0f, -1.0f, 1.0f,
-            0.0f, 1.0f, 0.0f
+            0.0f, -1.0f,  1.0f
     };
     private float colors[] = {
             0.0f, 0.0f, 1.0f, 1.0f,
@@ -28,10 +27,10 @@ class Figure2 {
     };
 
     private byte indices[] = {
-            2, 4, 3,
-            1, 4, 2,
-            0, 4, 1,
-            4, 0, 3
+            0, 1, 2,
+            0, 1, 3,
+            1, 2, 3,
+            0, 2, 3
     };
 
     public Figure2() {

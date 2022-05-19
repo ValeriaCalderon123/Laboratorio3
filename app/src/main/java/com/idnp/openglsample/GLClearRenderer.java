@@ -25,14 +25,14 @@ public class GLClearRenderer implements Renderer {
         gl.glTranslatef(-3.0f, 0.0f, -10.0f);
         gl.glRotatef(mCubeRotation, 1.0f, 1.0f, 1.0f);
         mCube.draw(gl);
-        mCubeRotation -= 0.15f;
+        mCubeRotation -= 0.45f;
 
         gl.glLoadIdentity();
 
         gl.glTranslatef(2.0f, 0.0f, -10.0f);
         gl.glRotatef(mFigure2Rotation, 2.0f, 2.0f, 2.0f);
         mCube2.draw(gl);
-        mFigure2Rotation -= 0.15f;
+        mFigure2Rotation -= 0.45f;
 
     }
 
